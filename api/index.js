@@ -2,7 +2,7 @@ import OpenAI from "openai";
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import { hiteshPersona } from "./persona/hitesh.js";
+import { hiteshPersona } from "../persona/hitesh.js";
 
 dotenv.config();
 
@@ -51,7 +51,6 @@ app.post("/chat", async (req, res) => {
       }
     }
 
-    // After streaming is done, store the assistant's full reply
     messages.push({ role: "assistant", content: assistantReply });
 
     res.end();
