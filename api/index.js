@@ -4,24 +4,20 @@ import dotenv from "dotenv";
 import cors from "cors";
 import { hiteshPersona } from "../persona/hitesh.js";
 
-dotenv.config();
+dotenv.config({
+  path: "./.env",
+});
 
 const app = express();
 app.use(express.json());
 app.use(
   cors({
-    // origin: [
-    //   "http://localhost:5173",
-    //   "https://myfrontend.com",
-    //   "https://chaicode-chat-fe.vercel.app/",
-    //   "https://chaicode-chat-fe.vercel.app",
-    //   '*'
-    // ],
     origin: "*",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+app.options("*", cors());
 
 const openai = new OpenAI({
   apiKey: process.env.GEMINI_API_KEY,
