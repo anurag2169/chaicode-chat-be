@@ -14,6 +14,7 @@ app.use(
       "http://localhost:5173",
       "https://myfrontend.com",
       "https://chaicode-chat-fe.vercel.app/",
+      "https://chaicode-chat-fe.vercel.app",
       '*'
     ],
     methods: ["GET", "POST"],
