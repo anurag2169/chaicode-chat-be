@@ -3,6 +3,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import { hiteshPersona } from "./persona/hitesh.js";
+import { piyushPersona } from "./persona/piyush.js";
 
 dotenv.config();
 
@@ -23,14 +24,21 @@ const openai = new OpenAI({
 
 app.post("/chat", async (req, res) => {
   try {
-    const { message } = req.body;
+    const { message, mentor } = req.body;
 
     res.setHeader("Content-Type", "text/event-stream");
     res.setHeader("Cache-Control", "no-cache");
     res.setHeader("Connection", "keep-alive");
+    let systemPrompt =
+      mentor === "hitesh"
+        ? hiteshPersona.system_instruction
+        : piyushPersona.system_instruction;
 
     const messages = [
-      { role: "system", content: hiteshPersona.system_instruction },
+      {
+        role: "system",
+        content: systemPrompt || hiteshPersona.system_instruction,
+      },
       { role: "user", content: message },
     ];
 
