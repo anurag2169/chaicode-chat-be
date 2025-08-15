@@ -2,11 +2,9 @@ import OpenAI from "openai";
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import { hiteshPersona } from "../persona/hitesh.js";
+import { hiteshPersona } from "./persona/hitesh.js";
 
-dotenv.config({
-  path: "./.env",
-});
+dotenv.config();
 
 const app = express();
 app.use(express.json());
