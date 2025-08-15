@@ -10,7 +10,11 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://myfrontend.com"],
+    origin: [
+      "http://localhost:5173",
+      "https://myfrontend.com",
+      "https://chaicode-chat-fe.vercel.app/",
+    ],
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
