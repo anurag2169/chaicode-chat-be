@@ -17,7 +17,6 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
-app.options("*", cors());
 
 const openai = new OpenAI({
   apiKey: process.env.GEMINI_API_KEY,

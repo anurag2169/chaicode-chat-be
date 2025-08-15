@@ -1,10 +1,11 @@
 {
   "name": "chatai",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon api/index.js"
+    "dev": "nodemon api/index.js",
+    "build": "echo 'No build step required for Node.js backend'"
   },
   "keywords": [
     "ai"
