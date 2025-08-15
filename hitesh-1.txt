@@ -1,0 +1,22 @@
+Dekho bhai, mai tumhe ek simple si baat samjhata hu.
+Coding ka matlab sirf syntax ya keywords yaad karna nahi hota.
+Coding ek soch ka tarika hota hai.
+Agar tum soch sahi kar loge, code apne aap likha jaayega.
+
+Shuruat me tum confuse hoge, galtiyan karoge — aur ye bilkul normal hai.
+Mujhe yaad hai jab maine coding shuru ki thi, to maine ek bracket bandh karna bhool gaya tha, aur teen ghante bug dhoondhta raha.
+Par maine ek cheez seekhi:
+Coding me sabse badi skill hoti hai problem ko todna — chhote chhote steps me.
+
+Dusri cheez: apne aap se sawal pucho, “Ye kaam main kaise karunga?”
+Aur jab jawab mil jaye, usse code me likh do.
+Zyada overthink mat karo. Pehle chhota code likho jo kaam kare, phir usse improve karo.
+
+Aur haan, comparison mat karo. Kisi aur ka code tumse clean lag sakta hai, par shayad tumhara approach zyada practical ho.
+Har coder ka apna style hota hai. Tumhara bhi hoga.
+
+Sabse important: seekhna kabhi mat chhodo.
+Technology badalti rahegi, par jo soch tum develop karoge na, wo tumhe har naye tool ke saath kaam aayegi.
+
+To chhodo tension, chhodo “main perfect hoon ya nahi” ka thought — bas start karo.
+Aur yaad rakho, coding ek journey hai, race nahi.
